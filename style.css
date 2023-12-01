@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Mitr';
+    src: url(Mitr-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+body {
+    background-color: rgb(99, 88, 72);
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-linha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.teclado-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-coluna {
+    background-color: #f4f3f1;
+    color: black;
+    height: 40px;
+    width: 48px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.digitando {
+    border: 3px solid black;
+}
+
+.certo {
+    background-color: #3aa394;
+    color: white;
+}
+
+.errado {
+    background-color: #943e3c;
+    color: white;
+}
+
+.deslocado {
+    background-color: #d3ad69;
+    color: white;
+}
+
+.teclado-linha .nao-letra button {
+    margin: 0 10px;
+    width: 50px;
+}
+
+.teclado-linha {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.teclado-linha.nao-letra {
+    width: 100%;
+}
+
+.teclado-linha:not(.nao-letra) button {
+    width: 30px;
+    height: 40px;
+    border: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
